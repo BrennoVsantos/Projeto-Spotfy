@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Breninify</title>
+
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="shortcut icon" href="assets/img/breninifylogo.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-icons">
+
+            <span>
+                <h1>BRENINIFY</h1> 
+            </span>
+
+            <ul class="lista-acoes">
+                <li><a href="#"><i class="fa-solid fa-house"></i> Inicio</a></li>
+
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Buscar</a></li>
+
+                <li><a href="#"><i class="fa-regular fa-bookmark"></i> Sua biblioteca</a></li>
+            </ul>
+
+            <ul class="nav-musicas">
+                <li><a href="#"><i class="fa-solid fa-plus"></i> Criar playlist</a></li>
+
+                <li><a href="#"><i class="fa-regular fa-heart"></i> Músicas curtidas</a></li>
+
+                <li><a href="#"><i class="fa-regular fa-star"></i> Seus episódios</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-playlists">
+            <ul class="lista-musicas">
+                <li><a href="#">Yeat Playlist</a></li>
+                <li><a href="#">Brenini's Mix</a></li>
+                <li><a href="#">Pink | Jaden</a></li>
+                <li><a href="#">Brain Food</a></li>
+                <li><a href="#">Trap life vibes</a></li>
+                <li><a href="#">Alma de veio</a></li>
+                <li><a href="#">Speed up / slowed songs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="body">
+
+        <div class="ad-comprimento">
+
+            <div class="ad-container">
+                    <div class="ad-img">
+                        <img src="assets/img/maistocadas.jpg" alt="">
+                    </div>
+
+                    <div class="ad-info">
+                        <p>Playlist</p>
+
+                        <h1><a href="#">As músicas mais tocadas de 2023 | Top Hits | Summer Playlist | Global</a></h1>
+
+                        <p>As mais tocadas do momento a um clique de distancia</p>
+
+                        <button id="play">Play</button>
+                        <button id="seguir">seguir</button>
+                        <button id="ver-mais">...</button>
+                    </div>
+            </div>
+
+            <div class="user-playlists-container">
+
+                <h1>Bom dia</h1>
+
+                <div class="playlist-fila1">
+                    <div class="playlist-card" id="card1" onmouseenter="mudaCor('red')" onmouseleave="voltaCor()">
+
+                        <img src="assets/img/Likedsongsimg.jpg" alt="">
+
+                        <h2>Músicas Curtidas</h2>
+
+                       <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+                    </div>
+
+                    <div class="playlist-card" id="card2" onmouseenter="mudaCor('green')" onmouseleave="voltaCor()">
+
+                        <img src="assets/img/Zero.jpg" alt="">
+
+                        <h2>Zero</h2>
+
+                       <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+                    </div>
+
+                    <div class="playlist-card" id="card3" onmouseenter="mudaCor('grey')" onmouseleave="voltaCor()">
+
+                        <img src="assets/img/LuvIsRage.jpg" alt="">
+
+                        <h2>Luv is rage 2</h2>
+
+                       <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+                    </div>
+                </div>
+
+                <div class="playlist-fila2">
+                    <div class="playlist-card" id="card4" onmouseenter="mudaCor('yellow')" onmouseleave="voltaCor()">
+
+                        <img src="assets/img/Modjo.jpg" alt="">
+
+                        <h2>Modjo</h2>
+
+                       <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+                    </div>
+
+                    <div class="playlist-card" id="card5" onmouseenter="mudaCor('cian')" onmouseleave="voltaCor()">
+
+                        <img src="assets/img/fire.jpg" alt="">
+
+                        <h2>Blue Öyster Cult</h2>
+
+                       <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+                    </div>
+
+                    <div class="playlist-card" id="card6" onmouseenter="mudaCor('pink')" onmouseleave="voltaCor()">
+
+                        <img src="assets/img/Xscape.jpg" alt="">
+
+                        <h2>Xscape</h2>
+
+                       <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="final">
+
+            <div class="suas-musicas">
+                <h1><a href="#" id="suasmusicas">Suas músicas</a></h1>
+                <p><a href="#">Ver mais</a></p>
+            </div>
+
+            <div class="mscs-cards">
+                <div class="card-msc" id="cardmsc1">
+                    <img src="assets/img/starboy.jpg" alt="">
+
+                    <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+
+                    <h2>Starboy</h2>
+
+                    <p>The Weekend</p>
+
+                </div>
+
+                <div class="card-msc" id="cardmsc2">
+
+                    <img src="assets/img/AstroWorld.jpg" alt="">
+
+                    <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+
+                    <h2>AstroWorld</h2>
+
+                    <p>Travis Scott</p>
+                </div>
+
+                <div class="card-msc" id="cardmsc3">
+
+                    <img src="assets/img/LifesAtrip.jpg" alt="">
+
+                    <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+
+                    <h2>Life's a Trip</h2>
+
+                    <p>Trippie Redd</p>
+                </div>
+
+                <div class="card-msc" id="cardmsc4">
+
+                    <img src="assets/img/Currents.jpg" alt="">
+
+                    <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+                    <h2>Currents</h2>
+
+                    <p>Tame Impala</p>
+                </div>
+
+                <div class="card-msc" id="cardmsc5">
+
+                    <img src="assets/img/HeroesNVillains.jpg" alt="">
+
+                    <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+
+                    <h2>Heroes and Villlains</h2>
+
+                    <p>Metro Boomin</p>
+                </div>
+
+                <div class="card-msc" id="cardmsc6">
+
+                    <img src="assets/img/Syre.jpg" alt="">
+
+                    <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+
+                    <h2>Syre</h2>
+
+                    <p>Jaden</p>
+                </div>
+            </div>
+
+            <div id="recente">
+                <h1>Tocadas recentemente</h1>
+            </div>
+
+            <div class="mscs-cards2">
+                <div class="card-msc" id="cardmsc7">
+                    <img src="assets/img/icantell.jpg" alt="">
+
+                    <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+
+                    <h2>I can tell</h2>
+
+                    <p>Travis Scott</p>
+
+                </div>
+
+                <div class="card-msc" id="cardmsc8">
+
+                    <img src="assets/img/SpitInMyFace.jpg" alt="">
+
+                    <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+
+                    <h2>Spit in my Face</h2>
+
+                    <p>ThxSoMch</p>
+                </div>
+
+                <div class="card-msc" id="cardmsc9">
+
+                    <img src="assets/img/Killamanjaro.jpg" alt="">
+
+                    <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+
+                    <h2>Killamanjaro</h2>
+
+                    <p>Killy</p>
+                </div>
+
+                <div class="card-msc" id="cardmsc10">
+
+                    <img src="assets/img/NewMagic.jpg" alt="">
+
+                    <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+                    <h2>New Magic Wand</h2>
+
+                    <p>Tyler, The Creator</p>
+                </div>
+
+                <div class="card-msc" id="cardmsc11">
+
+                    <img src="assets/img/Tunnel.jpg" alt="">
+
+                    <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+
+                    <h2>Tunnel Vision</h2>
+
+                    <p>Justin Timberlake</p>
+                </div>
+
+                <div class="card-msc" id="cardmsc12">
+
+                    <img src="assets/img/HeyKids.jpg" alt="">
+
+                    <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+
+                    <h2>Kyoran Hey Kids!!</h2>
+
+                    <p>The Oral Cigarretes</p>
+                </div>
+            </div>
+
+            <div class="drake">
+                <h1>Drake</h1>
+            </div>
+
+            <div class="mscs-cards3">
+                <div class="card-msc" id="cardmsc13">
+                    <img src="assets/img/ifYoureReading.jpg" alt="">
+
+                    <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+
+                    <h2>If You're Reading ...</h2>
+
+                    <p>Drake</p>
+
+                </div>
+
+                <div class="card-msc" id="cardmsc14">
+
+                    <img src="assets/img/whatatime.jpg" alt="">
+
+                    <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+
+                    <h2>What a Time to Be Alive</h2>
+
+                    <p>Drake, Future</p>
+                </div>
+
+                <div class="card-msc" id="cardmsc15">
+
+                    <img src="assets/img/MoreLife.jpg" alt="">
+
+                    <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+
+                    <h2>More Life</h2>
+
+                    <p>Drake</p>
+                </div>
+
+                <div class="card-msc" id="cardmsc16">
+
+                    <img src="assets/img/TakeCare.jpg" alt="">
+
+                    <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+                    <h2>Take Care (Deluxe)</h2>
+
+                    <p>Drake</p>
+                </div>
+
+                <div class="card-msc" id="cardmsc17">
+
+                    <img src="assets/img/Views.jpg" alt="">
+
+                    <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+
+                    <h2>Views</h2>
+
+                    <p>Drake</p>
+                </div>
+
+                <div class="card-msc" id="cardmsc18">
+
+                    <img src="assets/img/NothingWasTheSame.jpg" alt="">
+
+                    <button><i class="fa-sharp fa-solid fa-circle-play"></i></button>
+
+                    <h2>Nothing was the...</h2>
+
+                    <p>Drake</p>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+                <h1> Desenvolvido Por Brenno Vinicius Dos Santos <h1>
+        </footer>
+    </section>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

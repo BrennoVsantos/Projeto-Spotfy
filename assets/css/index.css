@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    font-family: 'Poppins';
+}
+
+/* nav */
+
+nav{
+    height: 100vh;
+    width: 17vw;
+    background-color: rgba(0,0,0,255);
+    list-style-type: none;
+    position: fixed;
+}
+
+nav a{
+    color: rgba(168,168,168,255);
+    text-decoration: none;
+    padding-left: 30px;
+    transition: .2s;
+}
+
+nav h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+nav a:hover{
+    color: white;
+}
+
+nav li{
+    padding-top: 10px;
+}
+
+.nav-icons{
+    padding-top: 30px;
+}
+
+.lista-acoes{
+    margin-bottom: 30px;
+}
+
+.lista-acoes i, .nav-musicas i{
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+.nav-playlists{
+    padding-top: 30px;
+}
+
+.nav-musicas::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 90%;
+    background-color: rgba(220, 220, 220, 0.267);
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+/* Section Body */
+
+#body{
+    background-color: rgba(18,18,18,255);
+    width: 100vw;
+    overflow: hidden;
+    margin-left: 17vw;
+    position: relative;
+
+}
+
+.ad-comprimento{
+    background-image: linear-gradient(to bottom, rgb(81, 63, 145), rgba(18,18,18,255));
+    background-size: 200% 100%;
+    height: 625px;
+    padding-top: 50px;
+}
+
+.ad-container{
+    background-image: linear-gradient(to top right, black, transparent);
+    width: 76vw;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    border-radius: 5px;
+}
+
+.ad-img img{
+    width: 270px;
+    height: 270px;
+    z-index: 100;
+    padding: 15px 40px;
+}
+
+.ad-info{
+    padding: 30px;
+}
+
+.ad-info h1{
+    font-size: 2rem;
+}
+
+.ad-info a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.ad-info a:hover{
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.ad-info p, h1{
+    color: aliceblue;
+}
+
+.ad-info button{
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+    margin-top: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ad-info #play {
+    background-color: rgb(73, 179, 73);
+    outline: none;
+    border: none;
+}
+
+.ad-info #play:hover{
+    background-color: rgb(89, 197, 89);
+}
+
+.ad-info #seguir{
+    background-color: transparent;
+    color: aliceblue;
+    outline: none;
+    border: 1px solid white;  
+    margin-left: 20px;
+}
+
+.ad-info #seguir:hover{
+    border: 2px solid white;
+    background-color: rgba(240, 248, 255, 0.11);
+}
+
+.ad-info #ver-mais {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: aliceblue;
+    font-size: 2rem;
+    margin-right: 11px;
+}
+
+.ad-info #ver-mais:hover{
+    color: gainsboro;
+}
+
+.user-playlists-container{
+    width: 80.5vw;
+}
+
+.user-playlists-container h1{
+    margin-top: 10px;
+    margin-left: 32px;
+    font-size: 2rem;
+}
+
+.playlist-fila1{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.playlist-fila2{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.playlist-card{
+    background-color: rgba(77, 77, 77, 0.548);
+    width: 490px;
+    height: 100px;
+    margin-left: 30px;
+    display: flex;
+    margin-top: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.playlist-card:hover{
+    background-color: rgba(100, 100, 100, 0.548);
+}
+
+.playlist-card:hover button{
+    display: block;
+}
+
+.playlist-card h2{
+    margin-left: 20px;
+    align-self: center;
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.playlist-card img{
+    width: 100px;
+    height: 100px;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.192);
+}
+
+.playlist-card button{
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    margin-left: 100px;
+    display: none;
+    position: absolute;
+    left: 280px;
+    top: 17px;
+    transition: all .3s;
+}
+
+.playlist-card button:hover i{
+    color: rgb(116, 209, 116);
+    font-size: 3.6rem;
+}
+
+.playlist-card i {
+    font-size: 3.5rem;
+    color: rgb(89, 197, 89);
+    text-shadow: 1px 5px 7px rgba(0, 0, 0, 0.301);
+}
+
+.final .suas-musicas{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.suas-musicas a{
+    color: rgb(148, 147, 147);
+    text-decoration: none;
+    width: 85vw;
+}
+
+.suas-musicas a:hover{
+    text-decoration: underline;
+}
+
+.suas-musicas #suasmusicas{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.suas-musicas #suasmusicas:hover{
+    text-decoration: underline;
+}
+
+.mscs-cards, .mscs-cards2, .mscs-cards3{
+    margin-left: 30px;
+    width: 1510px;
+    height: 40vh;
+    background-color: rgba(0, 255, 255, 0);
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+}
+
+.card-msc{
+    background-color: rgba(31, 30, 30, 0.856);
+    width: 210px;
+    height: 330px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.card-msc:hover{
+    background-color: rgba(63, 62, 62, 0.856);
+}
+
+
+.card-msc h2{
+    color: aliceblue;
+}
+
+.card-msc p{
+    color: rgb(151, 151, 151);
+}
+
+.card-msc button{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+.card-msc button:hover i{
+    color: rgb(133, 223, 44);
+}
+
+
+.card-msc:hover button{
+    display: block;
+}
+
+.card-msc button i{
+    font-size: 2rem;
+    color: rgb(105, 190, 20);
+}
+
+.card-msc img{
+    width: 170px;
+    height: 170px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#recente h1, .drake h1{
+    margin-left: 32px;
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
